@@ -16,19 +16,19 @@ st.session_state.page_select = st.sidebar.radio('Pages', ['Page 1', 'Page 2', 'P
 if st.session_state.page_select == 'Page 1':
     st.title('Page 1')
     image = Image.open('poto.jpeg')
-new_size =  (1000,400)
+    new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
-resized_image = image.resize(new_size)
-col1, col2, col3 = st.columns([1, 1, 1])
-with col1:
-     st.write("")
-with col2:
-     st.image(resized_image, caption='', use_column_width=True)
-with col3:
-     st.write("")
+    resized_image = image.resize(new_size)
+    col1, col2, col3 = st.columns([1, 1, 1])
+    with col1:
+        st.write("")
+    with col2:
+        st.image(resized_image, caption='', use_column_width=True)
+    with col3:
+        st.write("")
 
-st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_allow_html=True)
+    st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_allow_html=True)
     #st.write('''<center><h3>APLIKASI INI DIRANCANG SEBAGAI TUGAS AKHIR di SEKOLAH TINGGI ILMU KESEHATAN SEMARANG</h3></center>''', unsafe_allow_html=True)
     #st.write('')
     #st.write('')
