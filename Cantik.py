@@ -92,10 +92,10 @@ if selected == 'TENTANG KAMI':
         st.write('')
         st.write('')
         st.write("""
-            '''NAMA    : Tri suhartono \n
+            """NAMA    : Tri suhartono \n
             NIM     : 02320115 \n
             ALAMAT  : PEMALANG\n
-            JABATAN : Peneliti 
+            JABATAN : Peneliti """
         """)
 
 if selected == 'MULAI KLASIFIKASI':
