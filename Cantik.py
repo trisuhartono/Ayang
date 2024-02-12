@@ -13,7 +13,7 @@ from termcolor import colored
 
 
 #image = Image.open('poto.jpeg')
-new_size =  (100,40)
+new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
 resized_image = image.resize(new_size)
@@ -35,7 +35,7 @@ st.write('<center><h1>SELAMAT DATANG DI APLIKASI DETEKSI PENYAKIT PNEUMONIA</h1>
     #st.write('''<center><h6>Tahun Akademik 2022/2023</h6></center>''', unsafe_allow_html=True)
     #st.write('''<center><h6>Oleh : TRI SUHARTONO</h6></center>''', unsafe_allow_html=True)
 
-
+"""
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
 
@@ -55,5 +55,5 @@ else:
     image = Image.open(temp)
     st.image(image,use_column_width=True)
     st.write ('semangat cantikuuu') 
-
+"""
 
