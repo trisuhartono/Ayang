@@ -11,7 +11,13 @@ from tempfile import NamedTemporaryFile
 from tensorflow.keras.preprocessing import image 
 from termcolor import colored
 
+with st.sidebar:
+    selected = option_menu(
+        menu_title = 'MENU',
+        options = ['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI DETEKSI'],
 
+    )
+st.sidebar.success("PILIH MENU DI ATAS")
 image = Image.open('poto.jpeg')
 new_size =  (1000,400)
     
@@ -36,6 +42,8 @@ st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_a
     #st.write('''<center><h6>Oleh : TRI SUHARTONO</h6></center>''', unsafe_allow_html=True)
 
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
+
+if selected == 'BERANDA':
 temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
 
 buffer = temp
