@@ -28,7 +28,7 @@ else:
     img = image.load_img#(temp_file.name, target_size=(50, 50),color_mode='grayscale')
 
   
-    image = Image.open(temp,target_size=50)
+    image = Image.open(temp)
     st.image(image,use_column_width=True)
     st.write ('semangat cantikuuu') 
 
