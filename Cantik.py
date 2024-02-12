@@ -49,7 +49,7 @@ if selected == 'BERANDA':
     temp_file = NamedTemporaryFile(delete=False)
     if buffer:
         temp_file.write(buffer.getvalue())
-        st.write(image.load_img(temp_file.name))
+        #st.write(image.load_img(temp_file.name))
 
 
     if buffer is None:
