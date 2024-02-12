@@ -12,23 +12,7 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
-with st.sidebar:
-    selected = option_menu(
-        menu_title = 'MENU',
-        options = ['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI KLASIFIKASI'],
 
-if selected == 'MULAI KLASIFIKASI':
-    st.write(f'anda sedang berada pada laman >> {selected}')
-    st.title('KLASIFIKASI PENYAKIT PNEUMONIA')
-    st.set_option('deprecation.showfileUploaderEncoding', False)
-    #@st.cache (allow_output_mutation=True)
-   """ @st.cache_resource 
-    def loading_model():
-        cnn = tf.keras.models.load_model('modelta4.h5')
-        return cnn
-
-    cnn = loading_model()
-    """
     temp = st.file_uploader("Upload Citra X-Ray")
 
     buffer = temp
