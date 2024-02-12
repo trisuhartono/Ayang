@@ -11,6 +11,31 @@ from tempfile import NamedTemporaryFile
 from tensorflow.keras.preprocessing import image 
 from termcolor import colored
 
+#st.image('logo.png', width=200)
+image = Image.open('poto.png')
+new_size =  (1000,1400)
+    
+# menyesuaikan ukuran gambar
+resized_image = image.resize(new_size)
+col1, col2, col3 = st.columns([1, 1, 1])
+with col1:
+     st.write("")
+with col2:
+     st.image(resized_image, caption='', use_column_width=True)
+with col3:
+     st.write("")
+
+st.write('<center><h1>SELAMAT DATANG DI APLIKASI DETEKSI PENYAKIT PNEUMONIA</h1></center>', unsafe_allow_html=True)
+    #st.write('''<center><h3>APLIKASI INI DIRANCANG SEBAGAI TUGAS AKHIR di SEKOLAH TINGGI ILMU KESEHATAN SEMARANG</h3></center>''', unsafe_allow_html=True)
+    #st.write('')
+    #st.write('')
+    #st.write('')
+    #st.write('')
+    #st.write('')
+    #st.write('''<center><h6>Tahun Akademik 2022/2023</h6></center>''', unsafe_allow_html=True)
+    #st.write('''<center><h6>Oleh : TRI SUHARTONO</h6></center>''', unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
 
