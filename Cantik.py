@@ -12,12 +12,12 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
-"""with st.sidebar:
+with st.sidebar:
     selected = option_menu(
         menu_title = 'MENU',
         options = ['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI KLASIFIKASI'],
 
-    )"""
+    )
 """
 st.sidebar.success("PILIH MENU DI ATAS")
 if selected == 'BERANDA':
