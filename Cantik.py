@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 #st.image('logo.png', width=200)
-image = Image.open('poto.png')
+image = Image.open('poto.jpeg')
 new_size =  (1000,1400)
     
 # menyesuaikan ukuran gambar
