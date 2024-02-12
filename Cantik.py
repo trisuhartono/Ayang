@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 
-#image = Image.open('poto.jpeg')
+image = Image.open('poto.jpeg')
 new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
@@ -25,7 +25,7 @@ with col2:
 with col3:
      st.write("")
 
-st.write('<center><h1>SELAMAT DATANG DI APLIKASI DETEKSI PENYAKIT PNEUMONIA</h1></center>', unsafe_allow_html=True)
+st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_allow_html=True)
     #st.write('''<center><h3>APLIKASI INI DIRANCANG SEBAGAI TUGAS AKHIR di SEKOLAH TINGGI ILMU KESEHATAN SEMARANG</h3></center>''', unsafe_allow_html=True)
     #st.write('')
     #st.write('')
