@@ -19,7 +19,7 @@ with st.sidebar:
 
     )
 st.sidebar.success("PILIH MENU DI ATAS")
-if selected == 'BERANDA':
+"""if selected == 'BERANDA':
     st.write(f'Anda sedang berada pada laman >> {selected}')
     #st.image('logo.png', width=200)
     image = Image.open('logo.png')
@@ -33,7 +33,7 @@ if selected == 'BERANDA':
     with col2:
          st.image(resized_image, caption='', use_column_width=True)
     with col3:
-        st.write("")
+        st.write("")"""
 
 
     st.write('<center><h1>SELAMAT DATANG DI APLIKASI KLASIFIKASI PENYAKIT PNEUMONIA</h1></center>', unsafe_allow_html=True)
