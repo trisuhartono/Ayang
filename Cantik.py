@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 
-image = Image.open('poto.jpeg')
+#image = Image.open('poto.jpeg')
 new_size =  (100,40)
     
 # menyesuaikan ukuran gambar
@@ -43,7 +43,7 @@ buffer = temp
 temp_file = NamedTemporaryFile(delete=False)
 if buffer:
      temp_file.write(buffer.getvalue())
-     st.image(image.load_img(temp_file.name))
+     st.write(image.load_img(temp_file.name))
 
 
 if buffer is None:
