@@ -12,21 +12,20 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
+temp = st.file_uploader("Upload Citra X-Ray")
 
-    temp = st.file_uploader("Upload Citra X-Ray")
-
-    buffer = temp
-    temp_file = NamedTemporaryFile(delete=False)
-    if buffer:
-        temp_file.write(buffer.getvalue())
-        st.write(image.load_img(temp_file.name))
+buffer = temp
+temp_file = NamedTemporaryFile(delete=False)
+if buffer:
+     temp_file.write(buffer.getvalue())
+     st.write(image.load_img(temp_file.name))
 
 
-    if buffer is None:
-        st.text("silakan coba lagi dan input citra X-Ray kembali.")
+if buffer is None:
+     st.text("silakan coba lagi dan input citra X-Ray kembali.")
 
-    else:
-        img = image.load_img(temp_file.name, target_size=(500, 500),color_mode='grayscale')
+else:
+    img = image.load_img(temp_file.name, target_size=(500, 500),color_mode='grayscale')
 
   # Preprocessing the image
         
@@ -43,7 +42,7 @@ st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
         #st.success(out)
   """
-        image = Image.open(temp)
-        st.image(image,use_column_width=True)
+     image = Image.open(temp)
+     st.image(image,use_column_width=True)
 
 
