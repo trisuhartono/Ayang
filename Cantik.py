@@ -47,14 +47,7 @@ if st.session_state.page_select == 'Page 1':
 
 if st.session_state.page_select == 'Page 2':
     st.title('Page 2')
-    next2 = st.button('Go to page 3')
-    if next2:
-        st.session_state.page_select = 'Page 3'  
-
-
-
-
-
+  
     temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
     temp_file = NamedTemporaryFile(delete=False)
@@ -72,6 +65,10 @@ if st.session_state.page_select == 'Page 2':
         image = Image.open(temp)
         st.image(image,use_column_width=True)
         st.write ('semangat cantikuuu') 
+    next2 = st.button('Go to page 3')
+    if next2:
+        st.session_state.page_select = 'Page 3'  
+
     
 
 
