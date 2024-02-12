@@ -1,0 +1,9 @@
+tensorflow
+pillow
+numpy
+h5py
+streamlit
+matplotlib
+temp
+pandas
+streamlit-option-menu
