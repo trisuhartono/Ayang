@@ -29,7 +29,8 @@ else:
 
   
     image = Image.open(temp)
-    st.image(image:60,50,use_column_width=True)
+    st.image(image,target_size=(50, 50),color_mode='grayscale')
+#use_column_width=True)
     st.write ('semangat cantikuuu') 
 
 
