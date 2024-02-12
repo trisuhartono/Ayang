@@ -96,7 +96,7 @@ if selected == 'TENTANG KAMI':
             #NIM     : 02320115 \n
            # ALAMAT  : PEMALANG\n
            # JABATAN : Peneliti
-        """)
+       # """)
 
 if selected == 'MULAI KLASIFIKASI':
     st.write(f'anda sedang berada pada laman >> {selected}')
@@ -109,7 +109,7 @@ if selected == 'MULAI KLASIFIKASI':
         return cnn
 
     cnn = loading_model()
-    """
+    
     temp = st.file_uploader("Upload Citra X-Ray")
 
     buffer = temp
