@@ -22,7 +22,7 @@ if buffer:
 
 
 if buffer is None:
-     st.text("silakan coba lagi dan input citra X-Ray kembali.")
+     st.text("yaaaah ko belum ada fotonya, coba lagi ya ayangkuuu😘😘")
 
 else:
     img = image.load_img(temp_file.name, target_size=(50, 50),color_mode='grayscale')
