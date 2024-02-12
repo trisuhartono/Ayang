@@ -19,8 +19,8 @@ st.session_state.page_select = st.sidebar.radio('menu',['BERANDA', 'PNEUMONIA','
             st.session_state.page_select = 'PNEUMONIA'
      if st.session_state.page_select == 'PNEUMONIA':
         st.title('PNEUMONIA')
-        next = st.button('NEXT')
-        if next:
+        next2 = st.button('NEXT')
+        if next2:
             st.session_state.page_select = 'BERANDA'
 
 image = Image.open('poto.jpeg')
