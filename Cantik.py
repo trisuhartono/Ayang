@@ -36,7 +36,7 @@ st.sidebar.success("PILIH MENU DI ATAS")
         st.write("")"""
 
 
-    st.write('<center><h1>SELAMAT DATANG DI APLIKASI KLASIFIKASI PENYAKIT PNEUMONIA</h1></center>', unsafe_allow_html=True)
+    """st.write('<center><h1>SELAMAT DATANG DI APLIKASI KLASIFIKASI PENYAKIT PNEUMONIA</h1></center>', unsafe_allow_html=True)
     st.write('''<center><h3>APLIKASI INI DIRANCANG SEBAGAI TUGAS AKHIR di SEKOLAH TINGGI ILMU KESEHATAN SEMARANG</h3></center>''', unsafe_allow_html=True)
     st.write('')
     st.write('')
@@ -46,7 +46,7 @@ st.sidebar.success("PILIH MENU DI ATAS")
     st.write('''<center><h6>Tahun Akademik 2022/2023</h6></center>''', unsafe_allow_html=True)
     st.write('''<center><h6>Oleh : TRI SUHARTONO</h6></center>''', unsafe_allow_html=True)
 """
-if selected == 'PNEUMONIA':
+"""if selected == 'PNEUMONIA':
     st.write(f'Anda sedang berada pada laman >> {selected}')
     st.header('PENYAKIT PNEUMONIA')
     st.write('''Pneumonia adalah peradangan paru-paru yang disebabkan oleh infeksi.
