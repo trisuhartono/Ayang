@@ -44,22 +44,22 @@ st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_a
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
 if selected == 'BERANDA':
-temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
+    temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
+    buffer = temp
+    temp_file = NamedTemporaryFile(delete=False)
+    if buffer:
+        temp_file.write(buffer.getvalue())
+        st.write(image.load_img(temp_file.name))
 
-buffer = temp
-temp_file = NamedTemporaryFile(delete=False)
-if buffer:
-     temp_file.write(buffer.getvalue())
-     st.write(image.load_img(temp_file.name))
 
+    if buffer is None:
+        st.text("yaaaah ko belum ada fotonya, coba lagi ya ayangkuuu😘😘")
 
-if buffer is None:
-     st.text("yaaaah ko belum ada fotonya, coba lagi ya ayangkuuu😘😘")
-
-else:
+    else:
    # img = image.load_img(temp_file.name, target_size=(50, 50),color_mode='grayscale')
 
-    image = Image.open(temp)
-    st.image(image,use_column_width=True)
-    st.write ('semangat cantikuuu') 
+        image = Image.open(temp)
+        st.image(image,use_column_width=True)
+        st.write ('semangat cantikuuu') 
+
 
