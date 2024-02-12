@@ -45,6 +45,7 @@ if selected == 'BERANDA':
     st.write('')
     st.write('''<center><h6>Tahun Akademik 2022/2023</h6></center>''', unsafe_allow_html=True)
     st.write('''<center><h6>Oleh : TRI SUHARTONO</h6></center>''', unsafe_allow_html=True)
+"""
 if selected == 'PNEUMONIA':
     st.write(f'Anda sedang berada pada laman >> {selected}')
     st.header('PENYAKIT PNEUMONIA')
@@ -97,6 +98,7 @@ if selected == 'TENTANG KAMI':
             JABATAN : Peneliti 
         """)
 
+
 if selected == 'MULAI KLASIFIKASI':
     st.write(f'anda sedang berada pada laman >> {selected}')
     st.title('KLASIFIKASI PENYAKIT PNEUMONIA')
@@ -107,7 +109,8 @@ if selected == 'MULAI KLASIFIKASI':
         cnn = tf.keras.models.load_model('modelta4.h5')
         return cnn
 
-    '''cnn = loading_model()jdhehhsh s
+    cnn = loading_model()
+    """
     temp = st.file_uploader("Upload Citra X-Ray")
 
     buffer = temp
@@ -124,6 +127,7 @@ if selected == 'MULAI KLASIFIKASI':
         img = image.load_img(temp_file.name, target_size=(500, 500),color_mode='grayscale')
 
   # Preprocessing the image
+        """
         pimg = image.img_to_array(img)
         pimg = pimg/255
         pimg = np.expand_dims(pimg, axis=0)
@@ -136,7 +140,7 @@ if selected == 'MULAI KLASIFIKASI':
              out = st.success('Anda {:.2%} dinyatakan BEBAS PNEUMONIA'.format(1-prediksi[0][0]))
 
         #st.success(out)
-  
+  """
         image = Image.open(temp)
         st.image(image,use_column_width=True)
 
