@@ -15,18 +15,7 @@ st.session_state.page_select = st.sidebar.radio('Pages', ['Page 1', 'Page 2', 'P
 
 if st.session_state.page_select == 'Page 1':
     st.title('Page 1')
-    next = st.button('Go to page 2')
-    if next:
-        st.session_state.page_select = 'Page 2'
-
-if st.session_state.page_select == 'Page 2':
-    st.title('Page 2')
-    next2 = st.button('Go to page 3')
-    if next2:
-        st.session_state.page_select = 'Page 3'  
-
-
-image = Image.open('poto.jpeg')
+    image = Image.open('poto.jpeg')
 new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
@@ -51,7 +40,21 @@ st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_a
 
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
-if selected == 'BERANDA':
+    
+    next = st.button('Go to page 2')
+    if next:
+        st.session_state.page_select = 'Page 2'
+
+if st.session_state.page_select == 'Page 2':
+    st.title('Page 2')
+    next2 = st.button('Go to page 3')
+    if next2:
+        st.session_state.page_select = 'Page 3'  
+
+
+
+
+
     temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
     temp_file = NamedTemporaryFile(delete=False)
