@@ -12,14 +12,15 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
-with st.sidebar:
+"""with st.sidebar:
     selected = option_menu(
         menu_title = 'MENU',
         options = ['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI KLASIFIKASI'],
 
-    )
+    )"""
+"""
 st.sidebar.success("PILIH MENU DI ATAS")
-"""if selected == 'BERANDA':
+if selected == 'BERANDA':
     st.write(f'Anda sedang berada pada laman >> {selected}')
     #st.image('logo.png', width=200)
     image = Image.open('logo.png')
@@ -96,20 +97,20 @@ if selected == 'TENTANG KAMI':
             #NIM     : 02320115 \n
            # ALAMAT  : PEMALANG\n
            # JABATAN : Peneliti
-       # """)
-
+        """)
+"""
 if selected == 'MULAI KLASIFIKASI':
     st.write(f'anda sedang berada pada laman >> {selected}')
     st.title('KLASIFIKASI PENYAKIT PNEUMONIA')
     st.set_option('deprecation.showfileUploaderEncoding', False)
     #@st.cache (allow_output_mutation=True)
-    @st.cache_resource 
+   """ @st.cache_resource 
     def loading_model():
         cnn = tf.keras.models.load_model('modelta4.h5')
         return cnn
 
     cnn = loading_model()
-    
+    """
     temp = st.file_uploader("Upload Citra X-Ray")
 
     buffer = temp
@@ -126,8 +127,8 @@ if selected == 'MULAI KLASIFIKASI':
         img = image.load_img(temp_file.name, target_size=(500, 500),color_mode='grayscale')
 
   # Preprocessing the image
-        """
-        pimg = image.img_to_array(img)
+        
+        """pimg = image.img_to_array(img)
         pimg = pimg/255
         pimg = np.expand_dims(pimg, axis=0)
 #predict
