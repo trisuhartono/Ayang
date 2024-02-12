@@ -11,10 +11,14 @@ from tempfile import NamedTemporaryFile
 from tensorflow.keras.preprocessing import image 
 from termcolor import colored
 
-st.session_state.page_select = st.sidebar.radio('Pages', ['Page 1', 'Page 2', 'Page 3'])
+with st.sidebar:
+    selected = option_menu(
+        menu_title = 'MENU',
+        options = ['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI DETEKSI'],
 
-if st.session_state.page_select == 'Page 1':
-    st.title('Page 1')
+    )
+st.sidebar.success("PILIH MENU DI ATAS")
+if selected == 'BERANDA':
     image = Image.open('poto.jpeg')
     new_size =  (1000,400)
     
