@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing import image
 from termcolor import colored
 
 st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
-temp = st.file_uploader("Upload Citra X-Ray")
+temp = st.file_uploader("Uplod foto cantinya dooong ayaangkuu 🥰🥰🥰")
 
 buffer = temp
 temp_file = NamedTemporaryFile(delete=False)
