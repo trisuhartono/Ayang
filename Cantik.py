@@ -27,22 +27,8 @@ if buffer is None:
 else:
     img = image.load_img(temp_file.name, target_size=(500, 500),color_mode='grayscale')
 
-  # Preprocessing the image
-        
-        """pimg = image.img_to_array(img)
-        pimg = pimg/255
-        pimg = np.expand_dims(pimg, axis=0)
-#predict
-        prediksi= cnn.predict(pimg)
-        if prediksi>= 0.5:
-             out = st.error('Anda  {:.2%} dinyatakan POSITIF PNEUMONIA'.format(prediksi[0][0])) #('Anda  {:.2%} dinyatakan POSITIF PNEUMONIA'.format(prediksi[0][0]))
-    
-        else:
-             out = st.success('Anda {:.2%} dinyatakan BEBAS PNEUMONIA'.format(1-prediksi[0][0]))
-
-        #st.success(out)
-  """
-     image = Image.open(temp)
-     st.image(image,use_column_width=True)
+  
+    image = Image.open(temp)
+    st.image(image,use_column_width=True)
 
 
