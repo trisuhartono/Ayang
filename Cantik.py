@@ -19,7 +19,7 @@ if st.session_state.page_select == 'Page 1':
     
 # menyesuaikan ukuran gambar
     resized_image = image.resize(new_size)
-    col1, col2, col3 = st.columns([, 1, ])
+    col1, col2, col3 = st.columns([1, 7, 1])
     with col1:
         st.write("")
     with col2:
