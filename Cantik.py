@@ -67,8 +67,8 @@ if st.session_state.page_select == 'Page 2':
     st.write('Mamas Ganteng') 
 
     
-    next2 = st.button('Lanjut lagi ay...')
-    if next2:
+    next = st.button('Lanjut lagi ay...')
+    if next:
         st.session_state.page_select = 'Page 3'
         
 if st.session_state.page_select == 'Page 3': 
