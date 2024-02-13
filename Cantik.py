@@ -45,9 +45,9 @@ if selected == 'BERANDA':
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
     
-    next = st.button('Go to page 2')
+    next = st.button('lanjut....')
     if next:
-        st.session_state.page_select = 'Page 2'
+        st.session_state.page_select = 'PNEUMONIA'
 
 if st.session_state.page_select == 'Page 2':
     st.title('Page 2')
