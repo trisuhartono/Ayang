@@ -84,7 +84,7 @@ if selected == 'UPLOAD DONG':
       
 if selected == 'WITH MY LOVE':
     st.write('Haloo ayaangkuu 🥰🥰🥰')
-    image = Image.open('1.jpeg')
+    image1 = Image.open('1.jpeg')
     new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
@@ -93,12 +93,12 @@ if selected == 'WITH MY LOVE':
     with col1:
         st.write("")
     with col2:
-        st.image(resized_image, caption='', use_column_width=True)
+        st.image1(resized_image, caption='', use_column_width=True)
     with col3:
         st.write("")
      
     
-    image = Image.open('ht.jpeg')
+    image = Image.open('ht.png')
     new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
