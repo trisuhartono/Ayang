@@ -78,7 +78,8 @@ elif choice == 'Page2':
     st.write ('') 
     st.write ('Terdanda') 
     st.write('Mamas Ganteng') 
-elif choice == 'Page3':
+    
+#elif choice == 'Page3':
     st.write('yaaa, halaman terkhir nih ay🤭')
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
