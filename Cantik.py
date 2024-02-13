@@ -47,7 +47,7 @@ if st.session_state.page_select == 'Page 1':
         
 if st.session_state.page_select == 'Page 2': 
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah')
-    st.Write('Hal: kartu Ucapan')
+    st.write('Hal: kartu Ucapan')
     st.write('')
     st.write('')
     st.write('')
