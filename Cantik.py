@@ -48,6 +48,8 @@ if selected == 'BERANDA':
     next = st.button('lanjut....')
     if next:
         st.session_state.page_select = 'PNEUMONIA'
+        if selected == 'PNEUMONIA':
+            st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
         
 if selected == 'PNEUMONIA':
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
