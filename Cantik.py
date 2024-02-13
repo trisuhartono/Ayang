@@ -86,7 +86,32 @@ if st.session_state.page_select == 'Page 3':
         st.write('<center><h1>❤❤❤HAI AYAANGKUUUU CANTIIIKKKK❤❤❤</h1></center>', unsafe_allow_html=True) 
         st.write('<center><h3>Semangat kuliahe nggih ayaangkuuu❤❤❤, Mugi diparingi lancar sedoyo nggih cantiiiik❤❤❤</h3></center>', unsafe_allow_html=True) 
       
+import pickle as pkle
+import os.path
 
+pages = ['Page1','Page2','Page3']if os.path.isfile('next.p'):
+    next_clicked = pkle.load(open('next.p', 'rb'))
+    if next_clicked == len(pages):
+        next_clicked = 0 
+else:
+    next_clicked = 0 
+
+if next:
+    next_clicked = next_clicked+1
+    if next_clicked == len(pages):
+        next_clicked = 0 
+
+choice = st.sidebar.radio("Pages",('Page1','Page2', 'Page3'), index=next_clicked)
+pkle.dump(pages.index(choice), open('next.p', 'wb'))
+
+if choice == 'Page1':
+    st.title('Page 1')
+elif choice == 'Page2':
+    st.title('Page 2')
+elif choice == 'Page3':
+    st.title('Page 3')
+
+next = st.button('Go to next page')
     
 
 
