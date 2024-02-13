@@ -92,8 +92,6 @@ elif choice == 'Page3':
         st.text("yaaaah ko belum ada fotonya, coba lagi ya ayangkuuu😘😘")
 
     else:
-   # img = image.load_img(temp_file.name, target_size=(50, 50),color_mode='grayscale')
-
         image = Image.open(temp)
         st.image(image,use_column_width=True)
         st.write('<center><h1>❤❤❤HAI AYAANGKUUUU CANTIIIKKKK❤❤❤</h1></center>', unsafe_allow_html=True) 
