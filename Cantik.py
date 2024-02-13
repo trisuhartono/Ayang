@@ -20,15 +20,10 @@ from termcolor import colored
 
 st.session_state.page_select = st.sidebar.radio(['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI DETEKSI'])
 
-"""if st.session_state.page_select == 'Page 1':
-    st.title('Page 1')
-    next = st.button('Go to page 2')
-    if next:
-        st.session_state.page_select = 'Page 2'
-
-"""
-st.sidebar.success("PILIH MENU DI ATAS")
-if selected == 'BERANDA':
+if st.session_state.page_select == 'BERANDA':
+    
+#st.sidebar.success("PILIH MENU DI ATAS")
+"if selected == 'BERANDA':
     image = Image.open('poto.jpeg')
     new_size =  (1000,400)
     
