@@ -117,13 +117,12 @@ if selected == 'WITH MY LOVE':
     
 # menyesuaikan ukuran gambar
     resized_image = image.resize(new_size)
-    resized_image = image4.resize(new_size)
     col1, col2 = st.columns([1, 1])
     with col1:
         st.image(resized_image, caption='', use_column_width=True)
     
     with col2:
-        st.image4(resized_image4, caption='', use_column_width=True)
+        st.image(resized_image4, caption='', use_column_width=True)
     
 
 
