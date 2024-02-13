@@ -29,9 +29,7 @@ if st.session_state.page_select == 'Page 1':
 
     st.write('<center><h1>SELAMAT HARI VALENTINE AYANGKUUU❤❤❤</h1></center>', unsafe_allow_html=True)
     #st.write('''<center><h3>APLIKASI INI DIRANCANG SEBAGAI TUGAS AKHIR di SEKOLAH TINGGI ILMU KESEHATAN SEMARANG</h3></center>''', unsafe_allow_html=True)
-    #st.write('')
-    #st.write('')
-    #st.write('')
+  
     #st.write('')
     #st.write('')
     #st.write('''<center><h6>Tahun Akademik 2022/2023</h6></center>''', unsafe_allow_html=True)
@@ -48,10 +46,7 @@ if st.session_state.page_select == 'Page 1':
 if st.session_state.page_select == 'Page 2': 
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah')
     st.write('Hal: kartu Ucapan')
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
+    st.write('') 
     st.write('')
     st.write('Dengan penuh Cinta') 
     st.write('Dengan datangnya kartu ucapan ini, yang bertanda tangan dibawah ini') 
@@ -60,7 +55,7 @@ if st.session_state.page_select == 'Page 2':
     st.write('Masa Jabatan : SELAMANYA') 
     st.write('') 
     st.write('Dengan ini mengucapkan selamat HARI VALENTINE 2024.') 
-    st.write('Demikian Kartu ucapan ini saya buat dengan cinta seluah alam raya terkhusus bidadariku yang cantiiik, yang maniiisss, yang baiikkk, dan tam ada duanya') 
+    st.write('Demikian Kartu ucapan ini saya buat dengan cinta seluah alam raya terkhusus bidadariku yang cantiiik, yang maniiisss, yang baiikkk, dan tak ada duanya') 
     st.write('') 
     st.write ('') 
     st.write ('Terdanda') 
@@ -88,7 +83,8 @@ if st.session_state.page_select == 'Page 3':
 
         image = Image.open(temp)
         st.image(image,use_column_width=True)
-        st.write ('semangat cantikuuu') 
+        st.write ('<center><h1>❤❤❤HAI AYAANGKUUUU CANTIIIKKKK❤❤❤</h1></center>', unsafe_allow_html=True') 
+        st.write ('<center><h3>Semangat kuliahe nggih ayaangkuuu❤❤❤, Mugi diparingi lancar sedoyo nggih cantiiiik❤❤❤</h3></center>', unsafe_allow_html=True') 
       
 
     
