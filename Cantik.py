@@ -43,7 +43,7 @@ if st.session_state.page_select == 'Page 1':
     next = st.button('Go to page 2')
     if next:
         st.session_state.page_select = 'Page 2'
-            st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
+
         
 if st.session_state.page_select == 'Page 2': 
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
