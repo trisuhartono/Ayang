@@ -54,6 +54,8 @@ if st.session_state.page_select == 'Page 2':
     st.write('')
     st.write('')
     st.write('Dengan penuh Cinta') 
+    st.write('Dengan datangnya kartu ucapan ini, yang bertanda tangan dibawah ini' /n
+           ) 
    
 
   
