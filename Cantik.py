@@ -123,7 +123,7 @@ if selected == 'WITH MY LOVE':
         st.image(resized_image, caption='', use_column_width=True)
     
     with col2:
-        st.image4(resized_image4, caption='', use_column_width=True)
+        st.image4(resized_image, caption='', use_column_width=True)
     
 
 
