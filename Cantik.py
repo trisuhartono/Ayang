@@ -112,17 +112,18 @@ if selected == 'WITH MY LOVE':
         st.write("")
 
     image = Image.open('ht.png')
+    image4 = Image.open('4.png')
     new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
     resized_image = image.resize(new_size)
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
-        st.write("")
-    with col2:
         st.image(resized_image, caption='', use_column_width=True)
-    with col3:
-        st.write("")
+    
+    with col2:
+        st.image4(resized_image, caption='', use_column_width=True)
+    
 
 
 
