@@ -10,31 +10,14 @@ from tensorflow.keras.models import load_model
 from tempfile import NamedTemporaryFile
 from tensorflow.keras.preprocessing import image 
 from termcolor import colored
+with st.sidebar:
+    selected = option_menu(
+        menu_title = 'MENU',
+        options = ['BERANDA', 'UNDANGAN', 'UPLOAD DONG'],
 
-
-import streamlit as st
-import pickle as pkle
-import os.path
-
-pages = ['Page1','Page2','Page3']
-
-if os.path.isfile('next.p'):
-    next_clicked = pkle.load(open)
-    if next_clicked == len(pages):
-        next_clicked = 0 
-else:
-    next_clicked = 0 
-
-if next:
-    next_clicked = next_clicked+1
-    if next_clicked == len(pages):
-        next_clicked = 0 
-
-choice = st.sidebar.radio("Pages",('Page1','Page2', 'Page3'), index=next_clicked)
-pkle.dump(pages.index(choice), open('next.p', 'wb'))
-#next = st.button('Lanjut ay.....')
-
-if choice == 'Page1':
+    )
+st.sidebar.success("PILIH MENU DI ATAS")
+if selected == 'BERANDA'
     st.write('Haloo ayaangkuu 🥰🥰🥰')
     image = Image.open('poto.jpeg')
     new_size =  (1000,400)
@@ -60,7 +43,7 @@ if choice == 'Page1':
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
     
-elif choice == 'Page2':
+if selected == 'UNDANGAN'
     st.write('undungan nih buat ayaang❤❤')
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah')
     st.write('Hal: kartu Ucapan')
@@ -78,8 +61,7 @@ elif choice == 'Page2':
     st.write ('') 
     st.write ('Terdanda') 
     st.write('Mamas Ganteng') 
-    
-elif choice == 'Page3':
+if selected == 'UPLOAD DONG'
     st.write('yaaa, halaman terkhir nih ay🤭')
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
