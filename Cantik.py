@@ -62,10 +62,9 @@ if st.session_state.page_select == 'Page 2':
     st.write('Mamas Ganteng') 
 
     
-    next = st.button('Lanjut lagi ay...')
-    if next:
-        st.session_state.page_select = 'Page 3'
-        
+    next2 = st.button('Lanjut lagi ay...')
+    if next2:
+        st.session_state.page_select = 'Page 3'   
 if st.session_state.page_select == 'Page 3': 
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
