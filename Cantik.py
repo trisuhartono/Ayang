@@ -32,7 +32,7 @@ if next:
 
 choice = st.sidebar.radio("Pages",('Page1','Page2', 'Page3'), index=next_clicked)
 pkle.dump(pages.index(choice), open('next.p', 'wb'))
-next = st.button('Lanjut ay.....')
+#next = st.button('Lanjut ay.....')
 
 if choice == 'Page1':
     st.write('Haloo ayaangkuu 🥰🥰🥰')
