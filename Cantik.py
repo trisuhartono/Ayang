@@ -54,10 +54,22 @@ if st.session_state.page_select == 'Page 2':
     st.write('')
     st.write('')
     st.write('Dengan penuh Cinta') 
-    st.write('Dengan datangnya kartu ucapan ini, yang bertanda tangan dibawah ini
-             nama : tri suhrtono') 
-   
-
+    st.write('Dengan datangnya kartu ucapan ini, yang bertanda tangan dibawah ini') 
+    st.write('Nama: Tri suhartono') 
+    st.write('Jabatan : Calon suami Anis Muzkiyah') 
+    st.write('Masa Jabatan : SELAMANYA') 
+    st.write('') 
+    st.write('Dengan ini mengucapkan selamat HARI VALENTINE 2024.') 
+    st.write('Demikian Kartu ucapan ini saya buat dengan cinta seluah alam raya terkhusus bidadariku yang cantiiik, yang maniiisss, yang baiikkk, dan tam ada duanya') 
+    st.write('') 
+    st.write ('') 
+    st.write ('Terdanda') 
+    st.write('Mamas Ganteng') 
+    next = st.button('Lanjut ay...')
+    if next2:
+        st.session_state.page_select = 'Page 3'
+        
+if st.session_state.page_select == 'Page 3': 
   
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
@@ -76,9 +88,7 @@ if st.session_state.page_select == 'Page 2':
         image = Image.open(temp)
         st.image(image,use_column_width=True)
         st.write ('semangat cantikuuu') 
-    next2 = st.button('Go to page 3')
-    if next2:
-        st.session_state.page_select = 'Page 3'  
+      
 
     
 
