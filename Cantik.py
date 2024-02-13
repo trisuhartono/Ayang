@@ -13,7 +13,7 @@ from termcolor import colored
 with st.sidebar:
     selected = option_menu(
         menu_title = 'MENU',
-        options = ['BERANDA', 'UNDANGAN', 'UPLOAD DONG'],
+        options = ['BERANDA', 'UNDANGAN', 'UPLOAD DONG', 'WITH MY LOVE'],
 
     )
 st.sidebar.success("PILIH MENU DI ATAS")
@@ -82,7 +82,20 @@ if selected == 'UPLOAD DONG':
         st.write('<center><h1>❤❤❤HAI AYAANGKUUUU CANTIIIKKKK❤❤❤</h1></center>', unsafe_allow_html=True) 
         st.write('<center><h3>Semangat kuliahe nggih ayaangkuuu❤❤❤, Mugi diparingi lancar sedoyo nggih cantiiiik❤❤❤</h3></center>', unsafe_allow_html=True) 
       
-
+if selected == 'WITH MY LOVE':
+    st.write('Haloo ayaangkuu 🥰🥰🥰')
+    image = Image.open('poto.jpeg')
+    new_size =  (1000,400)
+    
+# menyesuaikan ukuran gambar
+    resized_image = image.resize(new_size)
+    col1, col2, col3 = st.columns([1, 7, 1])
+    with col1:
+        st.write("")
+    with col2:
+        st.image(resized_image, caption='', use_column_width=True)
+    with col3:
+        st.write("")
 
 
 
