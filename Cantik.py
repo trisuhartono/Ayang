@@ -17,7 +17,7 @@ with st.sidebar:
 
     )
 st.sidebar.success("PILIH MENU DI ATAS")
-if selected == 'BERANDA'
+if selected == 'BERANDA':
     st.write('Haloo ayaangkuu 🥰🥰🥰')
     image = Image.open('poto.jpeg')
     new_size =  (1000,400)
@@ -43,8 +43,9 @@ if selected == 'BERANDA'
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
     
-if selected == 'UNDANGAN'
+if selected == 'UNDANGAN':
     st.write('undungan nih buat ayaang❤❤')
+    st.write ('') 
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah')
     st.write('Hal: kartu Ucapan')
     st.write('') 
@@ -61,8 +62,9 @@ if selected == 'UNDANGAN'
     st.write ('') 
     st.write ('Terdanda') 
     st.write('Mamas Ganteng') 
-if selected == 'UPLOAD DONG'
+if selected == 'UPLOAD DONG':
     st.write('yaaa, halaman terkhir nih ay🤭')
+    st.write ('') 
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
     temp_file = NamedTemporaryFile(delete=False)
