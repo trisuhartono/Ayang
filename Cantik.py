@@ -72,7 +72,6 @@ if st.session_state.page_select == 'Page 2':
         st.session_state.page_select = 'Page 3'
         
 if st.session_state.page_select == 'Page 3': 
-  
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
     temp_file = NamedTemporaryFile(delete=False)
