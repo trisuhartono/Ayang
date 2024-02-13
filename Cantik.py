@@ -34,7 +34,7 @@ choice = st.sidebar.radio("Pages",('Page1','Page2', 'Page3'), index=next_clicked
 pkle.dump(pages.index(choice), open('next.p', 'wb'))
 
 if choice == 'Page1':
-    st.write('Haloo cantikuuuu 🥰🥰')
+    st.write('Haloo ayaangkuu 🥰🥰🥰')
     image = Image.open('poto.jpeg')
     new_size =  (1000,400)
     
@@ -77,8 +77,8 @@ elif choice == 'Page2':
     st.write ('') 
     st.write ('Terdanda') 
     st.write('Mamas Ganteng') 
-elif choice == 'yaaa, halaman terkhir nih ay🤭':
-    st.write('Page 3')
+elif choice == 'page 3':
+    st.write('yaaa, halaman terkhir nih ay🤭')
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
     temp_file = NamedTemporaryFile(delete=False)
