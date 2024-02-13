@@ -119,6 +119,6 @@ if st.session_state.page_select == 'Page 3':
         st.write('<center><h3>Semangat kuliahe nggih ayaangkuuu❤❤❤, Mugi diparingi lancar sedoyo nggih cantiiiik❤❤❤</h3></center>', unsafe_allow_html=True) 
       
 
-
+"""
 
 
