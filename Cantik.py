@@ -11,12 +11,9 @@ from tempfile import NamedTemporaryFile
 from tensorflow.keras.preprocessing import image 
 from termcolor import colored
 
-st.session_state.page_select = st.sidebar.radio(['BERANDA', 'PNEUMONIA','TENTANG KAMI', 'MULAI DETEKSI'])
+st.session_state.page_select = st.sidebar.radio('Pages', ['Page 1', 'Page 2', 'Page 3'])
 
-if st.session_state.page_select == 'BERANDA':
-    
-#st.sidebar.success("PILIH MENU DI ATAS")
-#if selected == 'BERANDA':
+if st.session_state.page_select == 'Page 1': 
     image = Image.open('poto.jpeg')
     new_size =  (1000,400)
     
@@ -43,13 +40,12 @@ if st.session_state.page_select == 'BERANDA':
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
     
-    next = st.button('lanjut....')
+    next = st.button('Go to page 2')
     if next:
-        st.session_state.page_select = 'PNEUMONIA'
-        if selected == 'PNEUMONIA':
+        st.session_state.page_select = 'Page 2'
             st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
         
-if selected == 'PNEUMONIA':
+if st.session_state.page_select == 'Page 2': 
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
 
   
