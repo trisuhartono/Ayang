@@ -50,8 +50,8 @@ if selected == 'BERANDA':
         st.session_state.page_select = 'PNEUMONIA'
         
 if selected == 'PNEUMONIA':
-if st.session_state.page_select == 'Page 2':
-    st.title('Page 2')
+    st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
+
   
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
     buffer = temp
