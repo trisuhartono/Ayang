@@ -112,7 +112,7 @@ if selected == 'WITH MY LOVE':
         st.write("")
 
     image = Image.open('ht.png')
-    image4 = Image.open('4.png')
+    image4 = Image.open('4.jpg')
     new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
