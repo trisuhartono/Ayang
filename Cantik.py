@@ -88,7 +88,7 @@ if selected == 'WITH MY LOVE':
     new_size =  (1000,400)
     
 # menyesuaikan ukuran gambar
-    resized_image = image.resize(new_size)
+    resized_image = image1.resize(new_size)
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
         st.write("")
