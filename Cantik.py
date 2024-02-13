@@ -27,7 +27,7 @@ if st.session_state.page_select == 'Page 1':
     with col3:
         st.write("")
 
-    st.write('<center><h1>SELAMAT HARI VALENTINE AYANG KUUU</h1></center>', unsafe_allow_html=True)
+    st.write('<center><h1>SELAMAT HARI VALENTINE AYANGKUUU❤❤❤</h1></center>', unsafe_allow_html=True)
     #st.write('''<center><h3>APLIKASI INI DIRANCANG SEBAGAI TUGAS AKHIR di SEKOLAH TINGGI ILMU KESEHATAN SEMARANG</h3></center>''', unsafe_allow_html=True)
     #st.write('')
     #st.write('')
@@ -40,13 +40,16 @@ if st.session_state.page_select == 'Page 1':
 #st.set_page_config(page_title="trisuhartono klasifikasi pneumonia")
 
     
-    next = st.button('Go to page 2')
+    next = st.button('Lanjut ay...')
     if next:
         st.session_state.page_select = 'Page 2'
 
         
 if st.session_state.page_select == 'Page 2': 
     st.write('Kepada Yang Tercantik: Ayangkuuu Dek Anis Muzkiyah') 
+    st.Write('Hal: kartu Ucapan')/n/n/n
+    st.write('Dengan penuh Cinta') 
+   
 
   
     temp = st.file_uploader("Uplod foto cantiknya dooong ayaangkuu 🥰🥰🥰")
